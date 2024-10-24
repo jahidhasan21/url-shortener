@@ -11,7 +11,7 @@ class UrlController extends Controller
 {
     $urls = Url::all();
 
-    return view('urls.index', compact('urls'));
+    return view('dashboard', compact('urls'));
 }
 
     public function create() {
